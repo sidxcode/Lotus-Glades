@@ -1,14 +1,17 @@
 import {defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 
+import schemas from './sanity/schemas';
+
 const config = defineConfig({
     
     projectId: 'm0b8b1ou',
     dataset: 'production',
-    title : "lg-sanity",
+    title : "Lotus Glades",
     apiVersion: "2023-12-6",
     basePath: "/admin",
-    plugins: [deskTool()]
+    plugins: [deskTool()],
+    schema : {types: schemas }
 })
 
 export default config;
