@@ -1,6 +1,4 @@
-import { PortableTextBlock } from "sanity";
-
-export type Project = {
+export type Carousel = {
     _id: string;
     _createdAt: Date;
     name: string;
@@ -8,5 +6,4 @@ export type Project = {
     image: string;
     alt: string;
     url: string;
-    content: PortableTextBlock[];
 }
