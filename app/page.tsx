@@ -2,6 +2,7 @@ import {getProjects, getBackground, getCarousel} from '@/sanity/sanity-utlis'
 import background from '@/sanity/schemas/background-schema';
 import Image from 'next/image'
 import Image1 from './assest/image1.png'
+import { Carousel } from 'react-responsive-carousel';
 
 export default async function Home() {
 
@@ -42,35 +43,36 @@ export default async function Home() {
     // </div>
     <div className='body'>
       {/* nav starts */}
-      <div className='nav sticky top-0'>
-        <div className='nav_logo flex justify-center'>
+      <div className='nav sticky top-0 flex justify-center items-center h-[80px]'>
+        <div className='nav_logo bg-black w-[80px] h-[80px] z-10'>
           logo
         </div>
       </div>
       {/* nav ends */}
 
       {/* hero section starts */}
-      <div className='landing h-screen flex justify-center items-center flex-col relative'>
+      <div className='landing h-screen flex justify-center items-center flex-col relative md:justify-start'>
         
-        <div className='landing_content'>
+        <div className='landing_content h-[100%] w-[100%]'>
           
           {/* //main title */}
 
-          <div className='landing_content_title text-[30px] text-center font-bold'>
+          <div className='landing_content_title h-[40%] text-[30px] flex justify-center items-center text-center font-bold md:text-[100px]'>
             A Mindset of Abundance
           </div>
           {/* main title ends */}
 
 
           {/* //slider starts here */}
-          <div className='landing_content_slider flex flex-col md:flex-row'>
+          
+          <div className='landing_content_slider h-[60%] w-[100%] flex flex-col md:flex-row justify-center items-center md:justify-start lg:justify-start'>
             
             {/* //slider text */}
-            <div className='landing_content_slider_text my-[33px]'>
-              <div className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center'>
-                The world of luxury
+            <div className='landing_content_slider_text w-[100%] flex justify-center items-center flex-col px-[10%] mb-[8px] md:items-start md:w-[30%] md:px-[5%]'>
+              <div className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center md:text-left md:text-[40px] md:w-[70%]'>
+                THE WORLD OF LUXURY
               </div>
-              <div className=' landing_content_slider_text-2 text-center px-2'>
+              <div className=' landing_content_slider_text-2 text-center md:text-left'>
               Unlock the perfect living experience by exploring a 
               diverse selection of homes
               </div>
@@ -78,11 +80,16 @@ export default async function Home() {
             {/* //slider text ends */}
 
             {/* //slider carousel starts here */}
-            <div className='landing_slider_carousel h-fit w-full bg-slate-500 absolute bottom-0'>
-              <Image src='/asset/image1.png' width={360} height={240} alt="pic1"/>
+            <div className='landing_slider_carousel h-[240px] w-full flex flex-row md:w-[70%]'>
+              {/* <Carousel/> */}
+              <Image src='/assets/image1.png' width={360} height={240} alt="pic1" className='bg-gray-300 px-2 z-0'/>
+              {/* <Image src='/assets/image2.png' width={360} height={240} alt="pic2" className='bg-gray-400 px-2'/> */}
+              {/* <Image src='/assets/image2.png' width={360} height={240} alt="pic2" className='bg-gray-400 px-2'/> */}
             </div>
             {/* //slider carousel ends here */}
+            
           </div>
+
           {/* //slider ends here  */}
         </div>
       </div>
@@ -129,7 +136,7 @@ export default async function Home() {
         img
       </div>
 
-      <div className='cards flex flex-col px-10 my-20'>
+      <div className='cards flex flex-col px-10 my-20 bg-gray-300'>
         <div className='cards-text'>
           <div className='cards-text_title text-3xl text-bold'>Uncover your perfect living spaces</div>
           <div className='cards-text_subtext'>Unlock the perfect living experience by exploring a diverse selection of home</div>
@@ -137,10 +144,12 @@ export default async function Home() {
             <a href="#">Explore</a>
           </div>
         </div>
-        <div className='cards-list h-fit flex flex-col justify-center items-center mt-4'>
+        <div className='cards-list h-fit flex flex-col md:flex-row justify-center items-center mt-4'>
           {/* card 1 */}
-          <div className='cards-list_card bg-white my-4 rounded-xl'>
-            <div className='cards-list_card_img bg-gray-200 m-4 rounded-xl'>
+          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
+            <div className='mx-4'>
+
+            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
               img
             </div>
             <div className='my-4'>
@@ -163,9 +172,10 @@ export default async function Home() {
                 $ 890,000
               </div>
             </div>
+            </div>
 
             <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center pt-2'>
+              <div className='bg-gray-200 flex justify-center items-center py-2'>
               Details
               </div>
             </div>
@@ -174,8 +184,10 @@ export default async function Home() {
           {/* card 1 ends here */}
           
           {/* card 2 starts */}
-          <div className='cards-list_card bg-white my-4 rounded-xl'>
-            <div className='cards-list_card_img bg-gray-200 m-4 rounded-xl'>
+          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
+            <div className='mx-4'>
+
+            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
               img
             </div>
             <div className='my-4'>
@@ -198,9 +210,10 @@ export default async function Home() {
                 $ 890,000
               </div>
             </div>
+            </div>
 
             <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center pt-2'>
+              <div className='bg-gray-200 flex justify-center items-center py-2'>
               Details
               </div>
             </div>
@@ -209,8 +222,10 @@ export default async function Home() {
           {/* card 2 ends */}
 
           {/* card 3 starts */}
-          <div className='cards-list_card bg-white my-4 rounded-xl'>
-            <div className='cards-list_card_img bg-gray-200 m-4 rounded-xl'>
+          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
+            <div className='mx-4'>
+
+            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
               img
             </div>
             <div className='my-4'>
@@ -233,9 +248,10 @@ export default async function Home() {
                 $ 890,000
               </div>
             </div>
+            </div>
 
             <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center pt-2'>
+              <div className='bg-gray-200 flex justify-center items-center py-2'>
               Details
               </div>
             </div>
