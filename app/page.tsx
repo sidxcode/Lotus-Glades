@@ -1,8 +1,12 @@
 import {getProjects, getBackground, getCarousel} from '@/sanity/sanity-utlis'
 import background from '@/sanity/schemas/background-schema';
 import Image from 'next/image'
-import Image1 from './assest/image1.png'
-import { Carousel } from 'react-responsive-carousel';
+import Image1 from './assets/image1.png'
+import Image2 from './assets/image2.png'
+import Image3 from './assets/image3.png'
+import Image4 from './assets/image4.png'
+import Image5 from './assets/image5.png'
+// import { Carousel } from 'react-responsive-carousel';
 
 export default async function Home() {
 
@@ -43,8 +47,8 @@ export default async function Home() {
     // </div>
     <div className='body'>
       {/* nav starts */}
-      <div className='nav sticky top-0 flex justify-center items-center h-[80px]'>
-        <div className='nav_logo bg-black w-[80px] h-[80px] z-10'>
+      <div className='nav sticky top-0 flex justify-center items-center h-[60px] bg-white'>
+        <div className='nav_logo bg-black w-[60px] h-[60px] z-10'>
           logo
         </div>
       </div>
@@ -68,7 +72,7 @@ export default async function Home() {
           <div className='landing_content_slider h-[60%] w-[100%] flex flex-col md:flex-row justify-center items-center md:justify-start lg:justify-start'>
             
             {/* //slider text */}
-            <div className='landing_content_slider_text w-[100%] flex justify-center items-center flex-col px-[10%] mb-[8px] md:items-start md:w-[30%] md:px-[5%]'>
+            <div className='landing_content_slider_text w-[100%] flex justify-center items-center flex-col px-[10%] mb-[8px] md:items-start md:w-[40%] md:px-[5%]'>
               <div className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center md:text-left md:text-[40px] md:w-[70%]'>
                 THE WORLD OF LUXURY
               </div>
@@ -80,11 +84,9 @@ export default async function Home() {
             {/* //slider text ends */}
 
             {/* //slider carousel starts here */}
-            <div className='landing_slider_carousel h-[240px] w-full flex flex-row md:w-[70%]'>
+            <div className='landing_slider_carousel h-[240px] w-full flex flex-row md:w-[60%]'>
               {/* <Carousel/> */}
-              <Image src='/assets/image1.png' width={360} height={240} alt="pic1" className='bg-gray-300 px-2 z-0'/>
-              {/* <Image src='/assets/image2.png' width={360} height={240} alt="pic2" className='bg-gray-400 px-2'/> */}
-              {/* <Image src='/assets/image2.png' width={360} height={240} alt="pic2" className='bg-gray-400 px-2'/> */}
+              <Image src={Image1} alt="pic1" className='w-[360px]'/>
             </div>
             {/* //slider carousel ends here */}
             
@@ -97,24 +99,27 @@ export default async function Home() {
       {/* //hero section ends here */}
 
       {/* discover section */}
-      <div className='discover h-screen flex justify-center items-center flex-col px-10 bg-slate-600'>
+      <div className='discover h-screen flex justify-center items-center flex-col bg-slate-600'>
 
-        <div className='discover_content '>
-          <div className='discover_content_text flex flex-col lg:flex-row'>
+        <div className='discover_content w-[90%]'>
 
-            <div className='discover_content_text-title font-bold text-[40px]'>
+          <div className='discover_content_text flex flex-col lg:flex-row lg:justify-between items-center'>
+
+            <div className='discover_content_text-title font-bold text-[40px] md:text-[50px] w-full flex justify-start'>
               Discover
             </div>
 
-            <div className='discover_content_text-para text-[13px]'>
+            <div className='discover_content_text-para text-[13px] w-full flex justify-start md:text-[16px]'>
             This exquisite property provides a contemporary and cozy escape, accommodating up to four guests with ease
             </div>
 
           </div>
-          <div className='discover_content_button mt-[32px] mb-[32px] bg-white rounded-md w-fit px-[38px] py-[15px] text-[13px] '>
-            <a href="#">Explore</a>
+          <div className='discover_content_buttonContainer flex justify-start items-center'>
+            <div className='discover_content_buttonContainer-button mt-[32px] mb-[32px] bg-white rounded-md w-fit px-[38px] py-[15px] text-[13px] '>
+              <a href="#">Explore</a>
+            </div>
           </div>
-          <Image src='/image1.png' width={330} height={410} alt='pic' className='discover_content_image bg-white'/>
+          <Image src={Image2} alt='pic' className='discover_content_image bg-white w-[330px] h-[410]'/>
           {/* <div className='discover-content_image bg-white'> */}
           {/* </div> */}
         </div>
@@ -122,9 +127,11 @@ export default async function Home() {
       {/* discover section ends here */}
 
       {/* featured section */}
-      <div className='featured flex justify-center items-center flex-col h-2/4 bg-gray-400'>
-        <div className='featured-title'>FEATURED IN</div>
-        <div className='featured-img flex flex-row px-2 h-1/4'>
+      <div className='featured flex flex-col w-full bg-gray-400 h-[] md:h-[] lg:h-[] '>
+        <div className='featued_titleContainer w-full flex justify-center items-center pt-[17px] pb-[20px] md:pt-[154px] lg:pt-[40px]'>
+          <div className='featured_titleContainer-title'>FEATURED IN</div>
+        </div>
+        <div className='featured-img flex flex-row px-2 w-full h-[200px] bg-white mb-[17px] md:mb-[154px] lg:mb-[40px]'>
           <div>img1</div>
           <div>img2</div>
         </div>
@@ -132,25 +139,24 @@ export default async function Home() {
       {/* featured section ends here */}
 
 
-      <div className='img h-screen flex justify-center items-center bg-gray-600'>
-        img
-      </div>
+      
+        <Image src={Image4} alt='image3' className='img h-screen w-screen'/>
 
-      <div className='cards flex flex-col px-10 my-20 bg-gray-300'>
+      <div className='cards flex flex-col px-10 py-20 bg-gray-400'>
         <div className='cards-text'>
-          <div className='cards-text_title text-3xl text-bold'>Uncover your perfect living spaces</div>
+          <div className='cards-text_title text-bold lg:text-[50px]'>UNCOVER YOUR PERFECT LIVING SPACES</div>
           <div className='cards-text_subtext'>Unlock the perfect living experience by exploring a diverse selection of home</div>
           <div className='discover-content_button bg-slate-200 rounded-md w-fit mt-2 py-2 px-4'>
             <a href="#">Explore</a>
           </div>
         </div>
-        <div className='cards-list h-fit flex flex-col md:flex-row justify-center items-center mt-4'>
+        <div className='cards-list h-fit flex flex-col lg:flex-row justify-center items-center mt-4'>
           {/* card 1 */}
           <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
             <div className='mx-4'>
 
             <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              img
+              <Image src={Image1} alt='image1'/>
             </div>
             <div className='my-4'>
               Grand Residence with Cozy Ambience
@@ -188,7 +194,7 @@ export default async function Home() {
             <div className='mx-4'>
 
             <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              img
+              <Image src={Image1} alt='image1'/>
             </div>
             <div className='my-4'>
               Grand Residence with Cozy Ambience
@@ -226,7 +232,7 @@ export default async function Home() {
             <div className='mx-4'>
 
             <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              img
+              <Image src={Image1} alt='image1'/>
             </div>
             <div className='my-4'>
               Grand Residence with Cozy Ambience
