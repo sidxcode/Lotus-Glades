@@ -119,7 +119,7 @@ export default async function Home() {
               <a href="#">Explore</a>
             </div>
           </div>
-          <Image src={Image2} alt='pic' className='discover_content_image bg-white w-[330px] h-[410]'/>
+          <Image src={Image1} alt='pic' className='discover_content_image bg-white w-[330px] h-[410]'/>
           {/* <div className='discover-content_image bg-white'> */}
           {/* </div> */}
         </div>
@@ -140,16 +140,17 @@ export default async function Home() {
 
 
       
-        <Image src={Image4} alt='image3' className='img h-screen w-screen'/>
+        <Image src={Image1} alt='image1' className='img h-screen w-screen'/>
 
-      <div className='cards flex flex-col px-10 py-20 bg-gray-400'>
-        <div className='cards-text'>
-          <div className='cards-text_title text-bold lg:text-[50px]'>UNCOVER YOUR PERFECT LIVING SPACES</div>
+      <div className='cards flex flex-col px-10 py-20 bg-gray-400 mb-40'>
+
+        <div className='cards-text flex flex-col lg:flex-row lg:justify-between lg:items-center'>
+          <div className='cards-text_title text-bold text-[50px]'>UNCOVER YOUR PERFECT LIVING SPACES</div>
           <div className='cards-text_subtext'>Unlock the perfect living experience by exploring a diverse selection of home</div>
+        </div>
           <div className='discover-content_button bg-slate-200 rounded-md w-fit mt-2 py-2 px-4'>
             <a href="#">Explore</a>
           </div>
-        </div>
         <div className='cards-list h-fit flex flex-col lg:flex-row justify-center items-center mt-4'>
           {/* card 1 */}
           <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
