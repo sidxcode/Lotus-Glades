@@ -1,0 +1,1 @@
+export {default as myIcons} from './fb.svg'

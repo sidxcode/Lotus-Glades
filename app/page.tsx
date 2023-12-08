@@ -1,11 +1,8 @@
-import Image1 from './assets/image1.png'
-import Image2 from './assets/image2.png'
-import Image3 from './assets/image3.png'
-import Image4 from './assets/image4.png'
-import Image5 from './assets/image5.png'
-import Image from 'next/image'
 
+import Image from 'next/image'
 import {getTests} from '@/sanity/sanity-utlis'
+
+// import Fb from './svg/fb.svg';
 
 
 export default async function Home() {
@@ -13,22 +10,162 @@ export default async function Home() {
 
     
     return (
-      <div className='body mx-[20px]'>
+      <div className='body bg-[#EFEAE7]'>
       
       {/* nav starts */}
       <div className='nav sticky top-0 flex justify-center items-center h-[74px] bg-blue-200'>
+
       </div>
       {/* nav ends */}
 
-      {/*home screen starts*/}
-      <div className='hero h-screen w-full'>
-        <div>
-          <Image src= {Image1} height={517.5} width={350} alt="image1"/>
+      <div className='border-t-2 border-black'></div>
+
+      {/*hero starts*/}
+      <div className='hero w-full px-[20px]'>
+        <div className='hero_img h-[517.5px] bg-slate-200'>
+          {/* insert image from cms */}
         </div>
-
+        <div className='hero_text mt-[32px]'>
+          <div style={{fontFamily : 'ClearfaceStd , sans-serif', fontWeight : 'bold', fontSize : '48px', letterSpacing : '-3%', lineHeight: '58px'}} className='hero_text-title'>
+            A Mindset of Abundance
+          </div>
+          <div style={{fontFamily: 'Apercu, sans-serif', lineHeight: '140%'}} className='hero_text-body mt-[16px]'>
+            Lotus Glades offers innovative opportunities for clients in Delhi's L-Zone as per our understanding of Delhi Masterplan 2041. With expertise in Land & Farmhouse, development, we provide high-end luxury living complying with the GDA policy and LDRA approved Farmhouses. Our land parcels in Jhatikra & Kanganheri (Delhi Pincode 110043) present an exceptional early-stage investment opportunity in approved Farmhouses.
+          </div>
+        </div>
       </div>
-      {/* home screen ends */}
+      {/* hero ends */}
 
+      <div className='border-t-2 border-black my-[64px] mx-[20px]'></div>
+
+      {/* featured starts here */}
+      <div className='featured w-full px-[20px]'>
+        <div className='featured_text'>
+          <div style={{fontFamily : 'ClearfaceStd , sans-serif', fontWeight : 'bold', fontSize : '48px', letterSpacing : '-3%', lineHeight: '58px'}} className='featured_text-title'>
+            Featured Projects
+          </div>
+          <div style={{fontFamily: 'Apercu, sans-serif', lineHeight: '140%'}} className='featured_text-body mt-[16px]'>
+          Escape to charm and comfort in our featured farmhouses. Discover local treasures, embrace the simple life, and create memories that last a lifetime.
+          </div>
+        </div>
+        <div className='mt-[32px]'>
+          <div className='h-[193.5px] w-[350px] bg-slate-300'>
+          </div>
+        </div>
+       
+      </div>
+      {/* featured ends here */}
+
+      <div className='border-t-2 border-black my-[64px] mx-[20px]'></div>
+
+      {/* case study starts */}
+      <div className='CaseStudy px-[20px]'>
+        <div className='CaseStudy_card'>
+          <div className='CaseStudy_card_image h-[261px] w-[350px] bg-blue-200'></div>
+          <div className='CaseStudy_card_text mt-[32px]'>
+            <div style={{fontFamily : 'ClearfaceStd , sans-serif', fontWeight : 'bold', fontSize : '48px', letterSpacing : '-3%', lineHeight: '58px'}} className='CaseStudy_card_text-title'>
+              The Sunken Courtyard
+            </div>
+            <div style={{fontFamily: 'Apercu, sans-serif', lineHeight: '140%'}} className='CaseStudy_card_text-title mt-[16px]'>
+            The Sunken Courtyard Farmhouse is a unique property located in a quiet village on the outskirts of Delhi. It features a traditional courtyard design with modern elements, offering a tranquil haven amidst the bustling city.
+            </div>
+          </div>
+          <div className='border-t-2 border-black my-[16px]'></div>
+
+          <div className='CaseStudy_card_links w-full flex flex-row justify-evenly'>
+            <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px' }} className='CaseStudy_card_links-link1'><a href='#'>Link1</a></div>
+            <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px' }} className='CaseStudy_card_links-link2'><a href='#'>Link2</a></div>
+          </div>
+        </div>
+        <div className='CaseStudy_dots w-full flex flex-row justify-center my-[16px]'>
+          <div className='CaseStudy_dots-dot1 h-[20px] w-[20px] bg-black rounded-xl mr-[8px]'></div>
+          <div className='CaseStudy_dots-dot2 h-[20px] w-[20px] rounded-xl border-2 border-black mr-[8px]'></div>
+          <div className='CaseStudy_dots-dot3 h-[20px] w-[20px] rounded-xl border-2 border-black'></div>
+        </div>
+      </div>
+      {/* case study ends here */}
+
+      <div className='border-t-2 border-black my-[64px] mx-[20px]'></div>
+
+      {/* services start here */}
+      <div  className='Services w-full px-[20px]'>
+        <div style={{fontFamily : 'ClearfaceStd , sans-serif', fontWeight : 'bold', fontSize : '48px', letterSpacing : '-3%', lineHeight: '58px'}} className='Services_title text-center'>Our Services</div>
+        <div className='Services_list mt-[32px] flex flex-col justify-center'>
+          <div className='Services_list-1 flex flex-col justify-center'>
+            <div className='Services_list-1_text flex flex-col justify-center'>
+              <div style={{fontFamily: 'ClearfaceStd, sans-serif', fontSize: '28px', lineHeight: '58px' , letterSpacing : '-3%'}} className='Services_list-1_text-title text-center'>Sale & Purchase</div>
+              <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px', lineHeight : '140%' }} className='Sertext_list-1_text-body text-center'>Buy or sell your dream farmhouse with ease.
+                  Expert agents, comprehensive services, personalized approach.
+                  Market analysis, financing, legal support, and more.
+                  Let's find your perfect farm escape.</div>
+            </div>
+          </div>
+
+          <div className='Services_list-2 flex flex-col justify-center'>
+            <div className='Services_list-2_text flex flex-col justify-center'>
+              <div style={{fontFamily: 'ClearfaceStd, sans-serif', fontSize: '28px', lineHeight: '58px' , letterSpacing : '-3%'}} className='Services_list-1_text-title text-center'>Development & Construction</div>
+              <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px', lineHeight : '140%' }} className='Sertext_list-1_text-body text-center'>Experienced team, expert planning, sustainable solutions.
+              Turnkey services, high-quality construction, timely completion.
+              From concept to reality, your farmhouse awaits.</div>
+            </div>
+          </div>
+
+          <div className='Services_list-2 flex flex-col justify-center'>
+            <div className='Services_list-2_text flex flex-col justify-center'>
+              <div style={{fontFamily: 'ClearfaceStd, sans-serif', fontSize: '28px', lineHeight: '58px' , letterSpacing : '-3%'}} className='Services_list-1_text-title text-center'>Consulting & Management</div>
+              <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px', lineHeight : '140%' }} className='Sertext_list-1_text-body text-center'>Effortless living, worry-free enjoyment.
+              Maintenance, landscaping, staff, security.
+              Relax and unwind, your haven awaits.</div>
+            </div>
+          </div>          
+        </div>
+      </div>
+      {/* services end here */}
+
+      {/* footer starts here */}
+      <div className='footer mt-64 bg-LotusPink w-full text-[#EFEAE7]'>
+
+        <div className='footer_container my-32  px-[20px]'>
+          
+          <div style={{fontFamily: 'ClearfaceStd, sans-serif', fontSize: '28px', lineHeight: '58px' , letterSpacing : '-3%'}} className='fotter_container-title text-[#EFEAE7] text-center'>Lotus Glades</div>
+          
+          <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px' , lineHeight : '140%'}} className='footer_container_body mt-[24px] flex flex-row justify-between'>
+            
+            <div className='footer_container_body-links'>
+              <div className='footer_container_body-links-home mb-[8px]'><a href='#'>Home</a></div>
+              <div className='footer_container_body-links-about mb-[8px]'><a href='#'>About</a></div>
+              <div className='footer_container_body-links-projects mb-[8px]'><a href='#'>Projects</a></div>
+              <div className='footer_container_body-links-blog'><a href='#'>Blog</a></div>
+            </div>
+            
+            <div className='footer_container-body-contacts'>
+              <div className='footer_container-body-contacts-address mb-[8px]'>
+                A-9, Khasra No. 371, 3rd Floor,<br/> Near Shiv Murti, Rangpuri,<br/> New Delhi - 110037
+              </div>
+              <div className='footer_container-body-contacts-number mb-[8px]'>
+                +91 70421 10100
+              </div>
+              <div className='footer_container-body-contacts-mail mb-[8px]'>
+                info@lotusglades.com
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='footer_container2 mt-[64px] pb-[32px]'>
+          <div className='footer_container2_socials'>
+            <a href='#'>
+            <div className='footer_container2_socials-fb'>
+              <div className='footer_container2_socials-fb-icon'>
+                {/* <Fb className = 'h-[20px] w-[20px]'/> */}
+              </div>
+              <div style={{fontFamily : 'Apercu, sans-serif' , fontSize : '12px', lineHeight : '140%'}} className='footer_container2_socials-fb-name'>Facebook</div>
+            </div>
+            </a>
+          </div>
+          <div>copyright</div>
+        </div>
+      </div>
+      {/* footer ends here */}
 
       {/* <div className='h-screen'>
         <div>my tests go here</div>
@@ -47,345 +184,7 @@ export default async function Home() {
 
         {/* ))} */}
       {/* </div> */}
-
-      <div className=''>
-            {/* <div>Class</div> */}
-            <div style={{fontFamily : 'apercu'}} >Class</div>
-            <div style={{fontFamily : 'ClearfaceStd'}}></div>
-      </div>
-
-      {/* hero section starts */}
-      <div className='landing h-screen flex justify-center items-center flex-col relative md:justify-start'>
-        
-        <div className='landing_content h-[100%] w-[100%]'>
-          
-          {/* //main title */}
-
-          <div className='landing_content_title h-[40%] text-[30px] flex justify-center items-center text-center font-bold md:text-[100px]'>
-            A Mindset of Abundance
-          </div>
-          {/* main title ends */}
-
-
-          {/* //slider starts here */}
-          
-          <div className='landing_content_slider h-[60%] w-[100%] flex flex-col md:flex-row justify-center items-center md:justify-start lg:justify-start'>
-            
-            {/* //slider text */}
-            <div className='landing_content_slider_text w-[100%] flex justify-center items-center flex-col px-[10%] mb-[8px] md:items-start md:w-[40%] md:px-[5%]'>
-              <div style={{fontFamily : 'ClearfaceStd'}} className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center md:text-left md:text-[40px] md:w-[70%]'>
-                THE WORLD OF LUXURY
-              </div>
-              <div style={{fontFamily : 'Apercu'}} className=' landing_content_slider_text-2 text-center md:text-left'>
-              Unlock the perfect living experience by exploring a 
-              diverse selection of homes
-              </div>
-            </div>
-            {/* //slider text ends */}
-
-            {/* //slider carousel starts here */}
-            <div className='landing_slider_carousel h-[240px] w-full flex flex-row md:w-[60%]'>
-              {/* <Carousel/> */}
-              {/* <Image src={Image1} alt="pic1" className='w-[360px]'/> */}
-              {/* <Slider/> */}
-
-
-            </div>
-            {/* //slider carousel ends here */}
-            
-          </div>
-
-          {/* //slider ends here  */}
-        </div>
-      </div>
-
-      {/* //hero section ends here */}
-
-      {/* discover section */}
-      <div className='discover h-screen flex justify-center items-center flex-col bg-slate-600'>
-
-        <div className='discover_content w-[90%]'>
-
-          <div className='discover_content_text flex flex-col lg:flex-row lg:justify-between items-center'>
-
-            <div className='discover_content_text-title font-bold text-[40px] md:text-[50px] w-full flex justify-start'>
-              Discover
-            </div>
-
-            <div className='discover_content_text-para text-[13px] w-full flex justify-start md:text-[16px]'>
-            This exquisite property provides a contemporary and cozy escape, accommodating up to four guests with ease
-            </div>
-
-          </div>
-          <div className='discover_content_buttonContainer flex justify-start items-center'>
-            <div className='discover_content_buttonContainer-button mt-[32px] mb-[32px] bg-white rounded-md w-fit px-[38px] py-[15px] text-[13px] '>
-              <a href="#">Explore</a>
-            </div>
-          </div>
-          <Image src={Image1} alt='pic' className='discover_content_image bg-white w-[330px] h-[410]'/>
-          {/* <div className='discover-content_image bg-white'> */}
-          {/* </div> */}
-        </div>
-      </div>
-      {/* discover section ends here */}
-
-      {/* featured section */}
-      <div className='featured flex flex-col w-full bg-gray-400 h-[] md:h-[] lg:h-[] '>
-        <div className='featued_titleContainer w-full flex justify-center items-center pt-[17px] pb-[20px] md:pt-[154px] lg:pt-[40px]'>
-          <div className='featured_titleContainer-title'>FEATURED IN</div>
-        </div>
-        <div className='featured-img flex flex-row px-2 w-full h-[200px] bg-white mb-[17px] md:mb-[154px] lg:mb-[40px]'>
-          <div>img1</div>
-          <div>img2</div>
-        </div>
-      </div>
-      {/* featured section ends here */}
-
-
-      
-        <Image src={Image1} alt='image1' className='img h-screen w-screen'/>
-
-      <div className='cards flex flex-col px-10 py-20 bg-gray-400 mb-40'>
-
-        <div className='cards-text flex flex-col lg:flex-row lg:justify-between lg:items-center'>
-          <div className='cards-text_title text-bold text-[50px]'>UNCOVER YOUR PERFECT LIVING SPACES</div>
-          <div className='cards-text_subtext'>Unlock the perfect living experience by exploring a diverse selection of home</div>
-        </div>
-          <div className='discover-content_button bg-slate-200 rounded-md w-fit mt-2 py-2 px-4'>
-            <a href="#">Explore</a>
-          </div>
-        <div className='cards-list h-fit flex flex-col lg:flex-row justify-center items-center mt-4'>
-          {/* card 1 */}
-          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
-            <div className='mx-4'>
-
-            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              <Image src={Image1} alt='image1'/>
-            </div>
-            <div className='my-4'>
-              Grand Residence with Cozy Ambience
-            </div>
-            <div className='flex flex-row justify-between'>
-              <div>
-                Location
-              </div>
-              <div>
-                Austin
-              </div>
-            </div>
-            <div className='border-t-2 border-gray-100'></div>
-            <div className='flex flex-row justify-between'>
-              <div className=''>
-                Price
-              </div>
-              <div className=''>
-                $ 890,000
-              </div>
-            </div>
-            </div>
-
-            <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center py-2'>
-              Details
-              </div>
-            </div>
-
-          </div>
-          {/* card 1 ends here */}
-          
-          {/* card 2 starts */}
-          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
-            <div className='mx-4'>
-
-            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              <Image src={Image1} alt='image1'/>
-            </div>
-            <div className='my-4'>
-              Grand Residence with Cozy Ambience
-            </div>
-            <div className='flex flex-row justify-between'>
-              <div>
-                Location
-              </div>
-              <div>
-                Austin
-              </div>
-            </div>
-            <div className='border-t-2 border-gray-100'></div>
-            <div className='flex flex-row justify-between'>
-              <div className=''>
-                Price
-              </div>
-              <div className=''>
-                $ 890,000
-              </div>
-            </div>
-            </div>
-
-            <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center py-2'>
-              Details
-              </div>
-            </div>
-
-          </div>
-          {/* card 2 ends */}
-
-          {/* card 3 starts */}
-          <div className='cards-list_card bg-white my-4 mx-4 rounded-xl'>
-            <div className='mx-4'>
-
-            <div className='cards-list_card_img bg-gray-200 my-4 rounded-xl'>
-              <Image src={Image1} alt='image1'/>
-            </div>
-            <div className='my-4'>
-              Grand Residence with Cozy Ambience
-            </div>
-            <div className='flex flex-row justify-between'>
-              <div>
-                Location
-              </div>
-              <div>
-                Austin
-              </div>
-            </div>
-            <div className='border-t-2 border-gray-100'></div>
-            <div className='flex flex-row justify-between'>
-              <div className=''>
-                Price
-              </div>
-              <div className=''>
-                $ 890,000
-              </div>
-            </div>
-            </div>
-
-            <div className='m-2'>
-              <div className='bg-gray-200 flex justify-center items-center py-2'>
-              Details
-              </div>
-            </div>
-
-          </div>
-          {/* card 3 ends here */}
-        </div>
-
-
-        <div className='flex justify-center items-center'>
-          <div className='bg-gray-200 p-4 w-fit rounded-lg mt-5'>
-            Explore listings
-          </div>
-        </div>
-      </div>
-
-      <div className='community mx-10 h-screen bg-gray-300'>
-
-        <div className='flex flex-col'>
-
-          <div className='text-bold text-3xl'>
-            MEET THE COMMUNITY
-          </div>
-          <div>
-            Celebrates extraordinary design to an inspired community.
-          </div>
-
-        </div>
-        <div className='w-fit p-4 px-8 rounded-md bg-gray-200 my-4'>
-          Join Community
-        </div>
-
-        <div>
-          
-        </div>
-
-      </div>
-
-      <div className='img h-screen flex justify-center items-center bg-gray-600'>
-        img
-      </div>
-
-      <div className='h-screen flex flex-col bg-gray-500 justify-center items-center'>
-        <div className='text-bold text-3xl'>#LIVINPLUS</div>
-        <div className='flex flex-row bg-white p-2'>
-          <div>icon</div>
-          <div>
-          Follow us on instagram
-          </div>
-        </div>
-        <div className='flex flex-row'>
-            <div className=' mx-2 my-10 w-fit bg-slate-50'>
-              img
-            </div>
-            <div className=' mx-2 my-10 w-fit bg-slate-50'>
-              img
-            </div>
-            <div className=' mx-2 my-10 w-fit bg-slate-50'>
-              img
-            </div>
-        </div>
-      </div>
-
-      <div className='footer mx-10 h-full'>
-        <div className='my-10'>
-
-        <div className='text-bold text-3xl'>
-          LIVIN+
-        </div>
-        
-        <div className='my-8'>
-          Are you ready to take your real estate business to the next level ? We have an exciting proposition for you! Our cutting-edge real estate website template is designed to transform your online presence and supercharge your success in the competitive real estate market.
-        </div>
-
-        <div className='my-8'>
-        All the graphical images being used have been sourced from two specific platforms: Unsplash and Pexels
-        </div>
-
-        <div>
-        LINKS
-        </div>
-        <div>
-          <div>
-            Listings
-          </div>
-          <div>
-            About
-          </div>
-          <div>
-            Services
-          </div>
-          <div>
-            contact
-          </div>
-          <div>
-            community
-          </div>
-        </div>
-        </div>
-
-
-      <div>
-        PROPERTY
-      </div>
-      <div>
-        <div>
-          cozy grand residence
-        </div>
-        <div>
-        cityscape haven
-        </div>
-        <div>
-          notting hill london
-        </div>
-        <div>
-          tranquil house
-        </div>
-      </div>        
-
-      <div className=''>
-        Design & build by PixelCanine Studio
-      </div>
-      </div>
-
+     
     </div>
   );
 }

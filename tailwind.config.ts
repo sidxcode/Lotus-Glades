@@ -14,11 +14,11 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        Beige : '#EFEAE7',
-        Pink : '#951D51',
-        Blush : '#F8ECDD',
-        Green : '#DCE9DE',
-        Black : '#000000',
+        LotusBeige : '#EFEAE7',
+        LotusPink : '#951D51',
+        LotusBlush : '#F8ECDD',
+        LotusGreen : '#DCE9DE',
+        LotusBlack : '#000000',
       }
     },
   },
