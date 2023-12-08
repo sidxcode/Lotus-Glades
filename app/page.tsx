@@ -1,28 +1,36 @@
-// import Image1 from './assets/image1.png'
-// import Image2 from './assets/image2.png'
-// import Image3 from './assets/image3.png'
-// import Image4 from './assets/image4.png'
-// import Image5 from './assets/image5.png'
+import Image1 from './assets/image1.png'
+import Image2 from './assets/image2.png'
+import Image3 from './assets/image3.png'
+import Image4 from './assets/image4.png'
+import Image5 from './assets/image5.png'
 import Image from 'next/image'
 
 import {getTests} from '@/sanity/sanity-utlis'
 
 
 export default async function Home() {
-  try{
     const tests = await getTests();
 
     
     return (
-      <div className='body'>
+      <div className='body mx-[20px]'>
+      
       {/* nav starts */}
-      <div className='nav sticky top-0 flex justify-center items-center h-[60px] bg-white'>
-        <div className='nav_logo bg-black w-[60px] h-[60px] z-10'>
-          logo
-        </div>
+      <div className='nav sticky top-0 flex justify-center items-center h-[74px] bg-blue-200'>
       </div>
       {/* nav ends */}
-      <div className='h-screen'>
+
+      {/*home screen starts*/}
+      <div className='hero h-screen w-full'>
+        <div>
+          <Image src= {Image1} height={517.5} width={350} alt="image1"/>
+        </div>
+
+      </div>
+      {/* home screen ends */}
+
+
+      {/* <div className='h-screen'>
         <div>my tests go here</div>
         {tests.map ((test)=>(
           <div key={test._id}>
@@ -33,12 +41,17 @@ export default async function Home() {
                 width={250}
                 height={100}
                 />
-            )}
-            {test.name}
-            {/* <Image src= '{test.image}' width={100} height={100} alt='{test.alt}'/> */}
-          </div>
+            )} */}
+            {/* {test.name} */}
+          {/* </div> */}
 
-        ))}
+        {/* ))} */}
+      {/* </div> */}
+
+      <div className=''>
+            {/* <div>Class</div> */}
+            <div style={{fontFamily : 'apercu'}} >Class</div>
+            <div style={{fontFamily : 'ClearfaceStd'}}></div>
       </div>
 
       {/* hero section starts */}
@@ -60,10 +73,10 @@ export default async function Home() {
             
             {/* //slider text */}
             <div className='landing_content_slider_text w-[100%] flex justify-center items-center flex-col px-[10%] mb-[8px] md:items-start md:w-[40%] md:px-[5%]'>
-              <div className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center md:text-left md:text-[40px] md:w-[70%]'>
+              <div style={{fontFamily : 'ClearfaceStd'}} className = 'landing_content_slider_text-1 my-[33px] text-[20px] text-bold text-center md:text-left md:text-[40px] md:w-[70%]'>
                 THE WORLD OF LUXURY
               </div>
-              <div className=' landing_content_slider_text-2 text-center md:text-left'>
+              <div style={{fontFamily : 'Apercu'}} className=' landing_content_slider_text-2 text-center md:text-left'>
               Unlock the perfect living experience by exploring a 
               diverse selection of homes
               </div>
@@ -375,7 +388,4 @@ export default async function Home() {
 
     </div>
   );
-} catch (error) {
-  console.error('Error fetching test : ', error);
-}
 }

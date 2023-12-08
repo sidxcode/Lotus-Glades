@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: ClearfaceStd;
+    src: url('./fonts/ClearfaceStd-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ClearfaceStd;;
+    src: url('./fonts/ClearfaceStd-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Apercu;
+    src: url('./fonts/ApercuPro-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Apercu;
+    src: url('./fonts/ApercuPro-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
