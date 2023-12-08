@@ -1,7 +1,5 @@
-import project from "./project-schema";
-import background from "./background-schema";
-import carousel from "./carousel-schema";
+import test from './test-schema';
 
-const schemas = [project, background, carousel];
+const schemas = [test];
 
 export default schemas;

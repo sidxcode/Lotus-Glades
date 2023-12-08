@@ -1,8 +1,8 @@
-const carousel = 
+const test = 
 {
-    name : 'carousel',
-    title : 'Carousel',
-    type : 'document',
+    name: 'test',
+    title: 'Tests',
+    type: 'document',
     fields : [
         {
             name : 'name',
@@ -13,27 +13,22 @@ const carousel =
             name : 'slug',
             title : 'Slug',
             type : 'slug',
-            options: { source : 'name' }
+            options : {source : 'name'},
         },
         {
             name : 'image',
             title : 'Image',
             type : 'image',
-            options : { hotspot : true },
+            options : { hotspot: true },
             fields : [
                 {
-                name : 'alt',
-                title : 'Alt',
-                type : 'string',
+                    name : 'alt',
+                    title : 'Alt',
+                    type : 'string',
                 }
             ]
         },
-        {
-            name : 'url',
-            title : 'URL',
-            type : 'url', 
-        },
-    ],
+    ]
 };
 
-export default carousel;
+export default test;

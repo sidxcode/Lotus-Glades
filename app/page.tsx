@@ -1,51 +1,20 @@
-import {getProjects, getBackground, getCarousel} from '@/sanity/sanity-utlis'
-import background from '@/sanity/schemas/background-schema';
+// import Image1 from './assets/image1.png'
+// import Image2 from './assets/image2.png'
+// import Image3 from './assets/image3.png'
+// import Image4 from './assets/image4.png'
+// import Image5 from './assets/image5.png'
 import Image from 'next/image'
-import Image1 from './assets/image1.png'
-import Image2 from './assets/image2.png'
-import Image3 from './assets/image3.png'
-import Image4 from './assets/image4.png'
-import Image5 from './assets/image5.png'
-// import { Carousel } from 'react-responsive-carousel';
+
+import {getTests} from '@/sanity/sanity-utlis'
+
 
 export default async function Home() {
+  try{
+    const tests = await getTests();
 
-  const projects = await getProjects();
-
-  return (
-    // <div className='max-w-5xl mx-auto'>
-    //   <h1 className='text-7xl font-extrabold'><span className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent' >Lotus Glades</span></h1>
-
-    //   <p className='mt-3 text-xl text-gray-600'>
-    //     We are lotus glades
-    //   </p>
-
-    //   {/* <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Projects</h2>
-    //   {projects.map((project)=>(
-      
-    //   <div key={project._id} className='border border-gray-500 rounded-lg'>
-        
-    //     {project.image && (
-
-    //       <Image 
-    //         src = {project.image}
-    //         alt = {project.alt}
-    //         width = {250}
-    //         height= {100}
-    //         className = "object-cover rounded-lg border-gray-500"
-    //       />
-
-    //     )}
-
-    //     <div className='font-extrabold gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>{project.name}</div>
-    //   </div>
-    // ))} */}
-
-    // <div>
-    // </div>
-
-    // </div>
-    <div className='body'>
+    
+    return (
+      <div className='body'>
       {/* nav starts */}
       <div className='nav sticky top-0 flex justify-center items-center h-[60px] bg-white'>
         <div className='nav_logo bg-black w-[60px] h-[60px] z-10'>
@@ -53,6 +22,24 @@ export default async function Home() {
         </div>
       </div>
       {/* nav ends */}
+      <div className='h-screen'>
+        <div>my tests go here</div>
+        {tests.map ((test)=>(
+          <div key={test._id}>
+            {test.image && (
+              <Image
+                src={test.image}
+                alt={test.alt}
+                width={250}
+                height={100}
+                />
+            )}
+            {test.name}
+            {/* <Image src= '{test.image}' width={100} height={100} alt='{test.alt}'/> */}
+          </div>
+
+        ))}
+      </div>
 
       {/* hero section starts */}
       <div className='landing h-screen flex justify-center items-center flex-col relative md:justify-start'>
@@ -86,7 +73,10 @@ export default async function Home() {
             {/* //slider carousel starts here */}
             <div className='landing_slider_carousel h-[240px] w-full flex flex-row md:w-[60%]'>
               {/* <Carousel/> */}
-              <Image src={Image1} alt="pic1" className='w-[360px]'/>
+              {/* <Image src={Image1} alt="pic1" className='w-[360px]'/> */}
+              {/* <Slider/> */}
+
+
             </div>
             {/* //slider carousel ends here */}
             
@@ -385,4 +375,7 @@ export default async function Home() {
 
     </div>
   );
+} catch (error) {
+  console.error('Error fetching test : ', error);
+}
 }

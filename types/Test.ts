@@ -1,4 +1,4 @@
-export type Carousel = {
+export type Test = {
     _id: string;
     _createdAt: Date;
     name: string;
@@ -6,4 +6,4 @@ export type Carousel = {
     image: string;
     alt: string;
     url: string;
-}
+};
