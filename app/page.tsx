@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import {getTests} from '@/sanity/sanity-utlis'
 
-// import Fb from './svg/fb.svg';
-
 
 export default async function Home() {
     const tests = await getTests();
@@ -156,7 +154,6 @@ export default async function Home() {
             <a href='#'>
             <div className='footer_container2_socials-fb'>
               <div className='footer_container2_socials-fb-icon'>
-                {/* <Fb className = 'h-[20px] w-[20px]'/> */}
               </div>
               <div style={{fontFamily : 'Apercu, sans-serif' , fontSize : '12px', lineHeight : '140%'}} className='footer_container2_socials-fb-name'>Facebook</div>
             </div>
