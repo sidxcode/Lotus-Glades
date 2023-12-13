@@ -74,7 +74,7 @@ export default async function Home() {
             A Mindset of Abundance
           </div>
           <div style={{fontFamily: 'Apercu, sans-serif', lineHeight: '140%'}} className='hero_text-body mt-[16px]'>
-            Lotus Glades offers innovative opportunities for clients in Delhi's L-Zone as per our understanding of Delhi Masterplan 2041. With expertise in Land & Farmhouse, development, we provide high-end luxury living complying with the GDA policy and LDRA approved Farmhouses. Our land parcels in Jhatikra & Kanganheri (Delhi Pincode 110043) present an exceptional early-stage investment opportunity in approved Farmhouses.
+            Lotus Glades offers innovative opportunities for clients in Delhi&apos;s L-Zone as per our understanding of Delhi Masterplan 2041. With expertise in Land & Farmhouse, development, we provide high-end luxury living complying with the GDA policy and LDRA approved Farmhouses. Our land parcels in Jhatikra & Kanganheri (Delhi Pincode 110043) present an exceptional early-stage investment opportunity in approved Farmhouses.
           </div>
         </div>
       </div>
