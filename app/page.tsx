@@ -150,7 +150,7 @@ export default async function Home() {
               <div style={{fontFamily: 'Apercu, sans-serif', fontSize : '16px', lineHeight : '140%' }} className='Sertext_list-1_text-body text-center'>Buy or sell your dream farmhouse with ease.
                   Expert agents, comprehensive services, personalized approach.
                   Market analysis, financing, legal support, and more.
-                  Let's find your perfect farm escape.</div>
+                  Let&apos;s find your perfect farm escape.</div>
             </div>
           </div>
 
