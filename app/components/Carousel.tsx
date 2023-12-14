@@ -30,9 +30,8 @@ const Carousel = () => {
         <div className='mt-[32px] lg:ml-[32px] flex'>
               <Slider {...settings} className="w-[350px] h-[193.5px] bg-white overflow-hidden gap-2">
                       {images.map((image, index) => (
-                          <div className="p-2 bg-[#EFEAE7]">
+                          <div className="p-2 bg-[#EFEAE7]" key={index}>
                               <Image
-                                  key={index}
                                   src={image}
                                   alt={'Featured Products'}
                               />
