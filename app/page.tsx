@@ -32,8 +32,9 @@ export default async function Home() {
             {/* <div className='border-t-2 border-black'></div> */}
 
             {/*hero starts*/}
-            <div className='hero w-full px-[20px] h-screen bg-green-400 flex flex-col'>
-                <div className='hero_img bg-slate-200'>
+            <div className='hero w-full px-[20px] h-screen flex flex-col'>
+                <div className='hero_img bg-slate-200 h-[517.5px] w-full relative'>
+                    <Image layout = 'fill' src={Image1} alt= "1"/>
                     {/* {bg.map ((bg)=> (
             <div key = {bg._id}>
               {bg.image && (
