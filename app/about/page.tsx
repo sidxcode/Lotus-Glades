@@ -90,7 +90,7 @@ export default function Page() {
                         fontWeight: 'bold',
                         letterSpacing: '-3%',
                     }} className='hero_text-title my-[16px] text-[48px] md:text-[60px] leading-[58px] md:leading-[72px]'>
-                        Wouldn't you want a <span style={{ fontStyle: 'italic' }}>very bespoke farmhouse project?</span>
+                        Wouldn&apos;t you want a <span style={{ fontStyle: 'italic' }}>very bespoke farmhouse project?</span>
                     </div>
                 </div>
 
