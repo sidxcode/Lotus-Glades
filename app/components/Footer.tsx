@@ -70,7 +70,7 @@ export default function Footer() {
 
                                 <Link href="/projects/123" className=''>
                                     <div
-                                        className='footer_container2_socials-top-insta flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
+                                        className='footer_container2_socials-top-insta flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
                                         <div className='footer_container2_socials-top-insta-icon h-[16px] w-[16px]'>
                                             <Insta />
                                         </div>
@@ -83,7 +83,7 @@ export default function Footer() {
 
                                 <Link href="/projects/123" className=''>
                                     <div
-                                        className='footer_container2_socials-top-twitter flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
+                                        className='footer_container2_socials-top-twitter flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
                                         <div className='footer_container2_socials-top-twitter-icon h-[16px] w-[16px]'>
                                             <Twitter />
                                         </div>
@@ -100,7 +100,7 @@ export default function Footer() {
 
                                 <Link href="/projects/123" className=''>
                                     <div
-                                        className='footer_container2_socials-bottom-linkedin flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
+                                        className='footer_container2_socials-bottom-linkedin flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
                                         <div className='footer_container2_socials-bottom-linkedin-icon h-[16px] w-[16px]'>
                                             <Twitter />
                                         </div>
@@ -113,7 +113,7 @@ export default function Footer() {
 
                                 <Link href="/projects/123" className=''>
                                     <div
-                                        className='footer_container2_socials-bottom-whatsapp flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
+                                        className='footer_container2_socials-bottom-whatsapp flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
                                         <div className='footer_container2_socials-bottom-whatsapp-icon h-[16px] w-[16px]'>
                                             <Whatsapp />
                                         </div>

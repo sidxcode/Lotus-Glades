@@ -10,10 +10,17 @@
 }
 
 @font-face {
-    font-family: ClearfaceStd;;
+    font-family: ClearfaceStd;
     src: url('./fonts/ClearfaceStd-Bold.ttf');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: ClearfaceStd;
+    src:url('./fonts/ClearfaceStd-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {

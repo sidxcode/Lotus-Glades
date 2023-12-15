@@ -21,57 +21,18 @@ export default async function Home() {
     const bg = await getBg();
 
     return (
-        <div className='body bg-[#EFEAE7]'>
-
-            {/* nav starts */}
-            {/* <div className='nav sticky top-0 flex justify-center items-center h-[74px] bg-blue-200'>
-
-      </div> */}
-            {/* nav ends */}
-
-            {/* <div className='border-t-2 border-black'></div> */}
+        <div className='body bg-[#EFEAE7] py-[64px]'>
 
             {/*hero starts*/}
             <div className='hero w-full px-[20px] h-screen flex flex-col'>
+
                 <div className='hero_img bg-slate-200 h-[517.5px] w-full relative'>
                     <Image layout = 'fill' src={Image1} alt= "1"/>
-                    {/* {bg.map ((bg)=> (
-            <div key = {bg._id}>
-              {bg.image && (
-                <Image
-                  src = {bg.image}
-                  alt = {bg.alt}
-                  height= {100}
-                  width={100}
-                />
-              )}
-            </div>
-          ))} */}
-
-                    {/* <Image src = {Image1} alt = "asda" style={{height : '100%', width : '100%'}}/> */}
-
-                    {/* <div className='h-screen'>
-        <div>my tests go here</div>
-        {tests.map ((test)=>(
-          <div key={test._id}>
-            {test.image && (
-              <Image
-                src={test.image}
-                alt={test.alt}
-                width={250}
-                height={100}
-                />
-            )}
-            {test.name}
-          </div>
-
-        ))}
-      </div> */}
-
                     {/* insert image from cms */}
-                    {/* <Image src= {Image1} alt='' style={{height : '100%' , width : '100%'}}/> */}
                 </div>
+
                 <div className='hero_text mt-[32px]'>
+
                     <div style={{
                         fontFamily: 'ClearfaceStd , sans-serif',
                         fontWeight: 'bold',
@@ -89,6 +50,7 @@ export default async function Home() {
                         land parcels in Jhatikra & Kanganheri (Delhi Pincode 110043) present an exceptional early-stage
                         investment opportunity in approved Farmhouses.
                     </div>
+                    
                 </div>
             </div>
             {/* hero ends */}
@@ -125,7 +87,7 @@ export default async function Home() {
             <div className='border-t-2 border-black my-[64px] mx-[20px]'></div>
 
             {/* case study starts */}
-            <div className='CaseStudy px-[20px]'>
+            <div className='CaseStudy px-[20px] w-full'>
                 <Carousel2/>
             </div>
 
@@ -213,129 +175,6 @@ export default async function Home() {
                 </div>
             </div>
             {/* services end here */}
-
-            {/* footer starts here */}
-            <div className='footer mt-[64px] bg-LotusPink w-full text-[#EFEAE7]'>
-
-                <div className='footer_container pt-[32px]  px-[20px]'>
-
-                    <div style={{
-                        fontFamily: 'ClearfaceStd, sans-serif',
-                        fontSize: '48px',
-                        lineHeight: '58px',
-                        letterSpacing: '-3%'
-                    }} className='fotter_container-title text-[#EFEAE7] text-center font-bold'>Lotus Glades
-                    </div>
-
-                    <div style={{fontFamily: 'Apercu, sans-serif', fontSize: '16px', lineHeight: '140%'}}
-                         className='footer_container_body mt-[24px] flex flex-row justify-between'>
-
-                        <div className='footer_container_body-links'>
-                            <div className='footer_container_body-links-home mb-[8px]'><a href='#'>Home</a></div>
-                            <div className='footer_container_body-links-about mb-[8px]'><a href='#'>About</a></div>
-                            <div className='footer_container_body-links-projects mb-[8px]'><a href='#'>Projects</a>
-                            </div>
-                            <div className='footer_container_body-links-blog'><a href='#'>Blog</a></div>
-                        </div>
-
-                        <div className='footer_container-body-contacts'>
-                            <div className='footer_container-body-contacts-address mb-[8px]'>
-                                A-9, Khasra No. 371, 3rd Floor,<br/> Near Shiv Murti, Rangpuri,<br/> New Delhi - 110037
-                            </div>
-                            <div className='footer_container-body-contacts-number mb-[8px]'>
-                                +91 70421 10100
-                            </div>
-                            <div className='footer_container-body-contacts-mail mb-[8px]'>
-                                info@lotusglades.com
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    className='footer_container2 mt-[64px] pb-[32px] mx-[20px] flex justify-center items-center flex-col'>
-                    <div className='footer_container2_socials  w-fit flex flex-col'>
-
-                        <div className='footer_container2_socials-top flex flex-row mb-[8px] w-full'>
-                            <Link href="/projects/123">
-                                <div
-                                    className='footer_container2_socials-top-fb flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                    <div className='footer_container2_socials-top-fb-icon h-[16px] w-[16px]'>
-                                        <Fb/>
-                                    </div>
-                                    <div
-                                        style={{fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%'}}
-                                        className=' pl-[4px] footer_container2_socials-fb-name'>Facebook
-                                    </div>
-                                </div>
-                            </Link>
-
-                            <Link href="/projects/123" className=''>
-                                <div
-                                    className='footer_container2_socials-top-insta flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                    <div className='footer_container2_socials-top-insta-icon h-[16px] w-[16px]'>
-                                        <Insta/>
-                                    </div>
-                                    <div
-                                        style={{fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%'}}
-                                        className=' pl-[4px] footer_container2_socials-fb-name'>Instagram
-                                    </div>
-                                </div>
-                            </Link>
-
-                            <Link href="/projects/123" className=''>
-                                <div
-                                    className='footer_container2_socials-top-twitter flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                    <div className='footer_container2_socials-top-twitter-icon h-[16px] w-[16px]'>
-                                        <Twitter/>
-                                    </div>
-                                    <div
-                                        style={{fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%'}}
-                                        className=' pl-[4px] footer_container2_socials-fb-name'>Twitter
-                                    </div>
-                                </div>
-                            </Link>
-
-                        </div>
-
-                        <div className='footer_container2_socials-bottom flex flex-row w-full justify-center'>
-
-                            <Link href="/projects/123" className=''>
-                                <div
-                                    className='footer_container2_socials-bottom-linkedin flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                    <div className='footer_container2_socials-bottom-linkedin-icon h-[16px] w-[16px]'>
-                                        <Twitter/>
-                                    </div>
-                                    <div
-                                        style={{fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%'}}
-                                        className=' pl-[4px] footer_container2_socials-fb-name'>Linkedin
-                                    </div>
-                                </div>
-                            </Link>
-
-                            <Link href="/projects/123" className=''>
-                                <div
-                                    className='footer_container2_socials-bottom-whatsapp flex flex-row border-[1px] border-[#EFEAE7] w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                    <div className='footer_container2_socials-bottom-whatsapp-icon h-[16px] w-[16px]'>
-                                        <Whatsapp/>
-                                    </div>
-                                    <div
-                                        style={{fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%'}}
-                                        className=' pl-[4px] footer_container2_socials-fb-name'>Whatsapp
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className='footer_container2_pixelcanine mt-[24px] w-full flex justify-center'>
-                        <div style={{fontFamily: 'Apercu , Inter, sans-serif', fontSize: '12px'}}>Lotus Glades -
-                            Lovingly handcrafted by <span style={{fontWeight: 'bold'}}>Pixel Canine</span></div>
-                    </div>
-                </div>
-            </div>
-            {/* footer ends here */}
 
             {/* <div className='h-screen'>
         <div>my tests go here</div>
