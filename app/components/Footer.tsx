@@ -14,18 +14,18 @@ export default function Footer() {
             <footer>
                 <div className='footer bg-LotusPink w-full text-[#EFEAE7]'>
 
-                    <div className='footer_container pt-[32px]  px-[20px]'>
+                    <div className='footer_container pt-[32px]  px-[20px] flex flex-col md:flex-row'>
 
                         <div style={{
                             fontFamily: 'ClearfaceStd, sans-serif',
                             fontSize: '48px',
                             lineHeight: '58px',
                             letterSpacing: '-3%'
-                        }} className='fotter_container-title text-[#EFEAE7] text-center font-bold'>Lotus Glades
+                        }} className='fotter_container-title text-[#EFEAE7] text-center font-bold md:w-[50%] flex md:justify-start justify-center'>Lotus Glades
                         </div>
 
                         <div style={{ fontFamily: 'Apercu, sans-serif', fontSize: '16px', lineHeight: '140%' }}
-                            className='footer_container_body mt-[24px] flex flex-row justify-between'>
+                            className='footer_container_body mt-[24px] flex flex-row md:w-[50%] justify-between'>
 
                             <div className='footer_container_body-links'>
                                 <div className='footer_container_body-links-home mb-[8px]'><a href='#'>Home</a></div>
@@ -51,15 +51,15 @@ export default function Footer() {
 
 
                     <div
-                        className='footer_container2 mt-[64px] pb-[32px] mx-[20px] flex justify-center items-center flex-col'>
-                        <div className='footer_container2_socials  w-fit flex flex-col'>
+                        className='footer_container2 mt-[64px] pb-[32px] mx-[20px] flex justify-center items-center flex-col md:flex-row-reverse'>
+                        <div className='footer_container2_socials  w-fit flex flex-col md:justify-start md:flex-row lg:justify-center lg:items-center'>
 
-                            <div className='footer_container2_socials-top flex flex-row mb-[8px] w-full'>
+                            <div className='footer_container2_socials-top flex flex-row mb-[8px] lg:mb-[0px] lg:mt-[20px] w-full'>
                                 <Link href="/projects/123">
                                     <div
                                         className='footer_container2_socials-top-fb flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
-                                        <div className='footer_container2_socials-top-fb-icon h-[16px] w-[16px] '>
-                                            <Fb />
+                                        <div className='footer_container2_socials-top-fb-icon h-[16px] w-[16px]'>
+                                            <Fb/>
                                         </div>
                                         <div
                                             style={{ fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%' }}
@@ -96,7 +96,7 @@ export default function Footer() {
 
                             </div>
 
-                            <div className='footer_container2_socials-bottom flex flex-row w-full justify-center'>
+                            <div className='footer_container2_socials-bottom flex flex-row w-full justify-center lg:mt-[20px]'>
 
                                 <Link href="/projects/123" className=''>
                                     <div
@@ -115,7 +115,7 @@ export default function Footer() {
                                     <div
                                         className='footer_container2_socials-bottom-whatsapp flex flex-row border-[1px] border-[#EFEAE7] hover:bg-[#EFEAE7] hover:text-LotusPink w-fit rounded-[40px] py-[6px] px-[20px] mr-[8px]'>
                                         <div className='footer_container2_socials-bottom-whatsapp-icon h-[16px] w-[16px]'>
-                                            <Whatsapp />
+                                            <Whatsapp/>
                                         </div>
                                         <div
                                             style={{ fontFamily: 'Apercu, sans-serif', fontSize: '12px', lineHeight: '140%' }}
@@ -126,9 +126,9 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className='footer_container2_pixelcanine mt-[24px] w-full flex justify-center'>
-                            <div style={{ fontFamily: 'Apercu , Inter, sans-serif', fontSize: '12px' }}>Lotus Glades -
-                                Lovingly handcrafted by <span style={{ fontWeight: 'bold' }}>Pixel Canine</span></div>
+                        <div className='footer_container2_pixelcanine mt-[24px] w-full flex justify-center items-center md:justify-start'>
+                            <div style={{ fontFamily: 'Apercu , Inter, sans-serif', fontSize: '12px' }} className='w-fit flex justify-center items-center'>Lotus Glades -
+                                Lovingly handcrafted by<span style={{ fontWeight: 'bold' }} className='ml-[4px]'> Pixel Canine</span></div>
                         </div>
                     </div>
                 </div>
