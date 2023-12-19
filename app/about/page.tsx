@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image1 from '../img/Image1.jpg';
 import Image from 'next/image';
-import Acc from '../components/Acc';
+// import Acc from '../components/Acc';
 
 export default function Page() {
     return (
